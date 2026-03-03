@@ -72,3 +72,31 @@ box-shadow:
 0 0 60px red;
 transform:scale(1.05);
 }
+/* RULES PAGE */
+
+.rules-container{
+text-align:center;
+padding:60px 20px;
+}
+
+.rules-container h1{
+font-size:45px;
+margin-bottom:40px;
+text-shadow:0 0 20px red;
+}
+
+.rule-card{
+background:rgba(0,0,0,0.75);
+margin:20px auto;
+padding:20px;
+width:60%;
+border-radius:12px;
+font-size:20px;
+box-shadow:0 0 15px red;
+transition:0.3s;
+}
+
+.rule-card:hover{
+transform:scale(1.05);
+box-shadow:0 0 30px red;
+}

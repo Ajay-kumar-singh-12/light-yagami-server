@@ -3,6 +3,7 @@
 <head>
 <title>Light Yagami Server</title>
 <link rel="stylesheet" href="style.css">
+<meta  name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -19,6 +20,7 @@ Online: 0/20
 <a class="btn" onclick="copyIP()">Play Now</a>
 <a class="btn" href="https://discord.gg/nbSZTBcM" target="_blank">Join Discord</a>
 <a class="btn" href="ranks.html">View Ranks</a>
+<a href="rules.html" class="btn">Server Rules</a>
 
 </div>
 <script>
@@ -32,6 +34,27 @@ function copyIP() {
     });
 }
 </script>
+<!-- <div class="server-status">
+    <h2>Server Status</h2>
+    <p id="status">Checking...</p>
+</div>
+<script
+fetch("https://api.mcstatus.io/v2/status/java/lightyagamiii.falix.pro")
+.then(res => res.json())
+.then(data => {
 
+let status = document.getElementById("status");
+
+if(data.online){
+status.innerHTML =
+"🟢 Online | Players: "
++ data.players.online +
+"/" + data.players.max;
+}
+else{
+status.innerHTML="🔴 Offline";
+}
+</script>
+}); -->
 </body>
 </html>
